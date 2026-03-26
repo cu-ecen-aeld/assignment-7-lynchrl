@@ -13,6 +13,8 @@ LDDINC=$(PWD)/../include
 
 EXTRA_CFLAGS += $(DEBFLAGS)
 EXTRA_CFLAGS += -I$(LDDINC)
+cflags-y += $(DEBFLAGS)
+cflags-y += -I$(LDDINC)
 
 ifneq ($(KERNELRELEASE),)
 # call from kernel build system

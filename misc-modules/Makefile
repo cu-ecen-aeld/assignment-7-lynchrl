@@ -6,7 +6,7 @@
 # kernel Makefile or not.
 
 LDDINC=$(PWD)/../include
-EXTRA_CFLAGS += -I$(LDDINC)
+cflags-y += -I$(LDDINC)
 
 ifeq ($(KERNELRELEASE),)
 
